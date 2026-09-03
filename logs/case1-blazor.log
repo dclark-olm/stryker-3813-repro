@@ -1,0 +1,114 @@
+
+   _____ _              _               _   _ ______ _______  
+  / ____| |            | |             | \ | |  ____|__   __| 
+ | (___ | |_ _ __ _   _| | _____ _ __  |  \| | |__     | |    
+  \___ \| __| '__| | | | |/ / _ \ '__| | . ` |  __|    | |    
+  ____) | |_| |  | |_| |   <  __/ |    | |\  | |____   | |    
+ |_____/ \__|_|   \__, |_|\_\___|_| (_)|_| \_|______|  |_|    
+                   __/ |                                      
+                  |___/                                       
+
+
+Version: 4.16.0
+
+[10:31:10 INF] Analysis starting.
+[10:31:10 INF] Analyzing 1 test project(s).
+[10:31:13 INF] Found project C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components\Blazor.Components.csproj to mutate.
+[10:31:13 INF] Analysis complete.
+[10:31:13 INF] Building test project C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components.Tests\Blazor.Components.Tests.csproj (1/1)
+[10:31:13 INF] Building project Blazor.Components.Tests.csproj using dotnet build Blazor.Components.Tests.csproj -c Debug --property:Platform=AnyCPU (directory C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components.Tests.)
+[10:31:14 WRN] The Microsoft Test Platform testrunner is currently in preview. Results should be verified since this feature is still being tested.
+[10:31:14 INF] Number of tests found: 4 for project C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components\Blazor.Components.csproj. Initial test run started.
+[10:31:15 WRN] Failed to load analyzer 'Microsoft.CodeAnalysis.Razor.Compiler':  (error : ReferencesNewerCompiler, analyzer: All).
+[10:31:15 WRN] The analyzer 'Microsoft.CodeAnalysis.Razor.Compiler' references a newer version (5.9.0.0) of the compiler than the one used by Stryker.NET.
+[10:31:16 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components\Components\GreetingComponent.razor.cs resulted in a compile error (at 11:25) with id: CS0115, message: 'GreetingComponent.OnParametersSet()': no suitable method found to override (Source code: protected override void OnParametersSet()
+{	greeting = (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(4)?(false?"Hello, stranger"
+:$"Hello, {Name}"):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(3)?(true?"Hello, stranger"
+:$"Hello, {Name}"):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(7)?(Name.Trim()!=""):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(6)?(Name!=""):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(5)?(Name!=null):string.IsNullOrWhiteSpace(Name)
+)
+)
+)
+			? (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(8)?"":"Hello, stranger"
+)
+			: (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(9)?$"":$"Hello, {Name}")));
+})
+[10:31:16 INF] Safe Mode! Stryker will remove all mutations in OnParametersSet and mark them as 'compile error'.
+[10:31:16 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components\Components\TotalsComponent.razor.cs resulted in a compile error (at 18:25) with id: CS0115, message: 'TotalsComponent.OnInitialized()': no suitable method found to override (Source code: protected override void OnInitialized()
+{	{
+		title = (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(13)?"":"Totals");
+		summary = (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(15)?(false?$"{Passed} passed, {Rejected} rejected"
+:"Nothing inspected"):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(14)?(true?$"{Passed} passed, {Rejected} rejected"
+:"Nothing inspected"):(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(17)?Passed + Rejected >= 0
+:(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(16)?Passed + Rejected < 0
+:(StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(18)?Passed - Rejected :Passed + Rejected ) > 0
+)
+)
+			? (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(19)?$""
+:$"{Passed} passed, {Rejected} rejected"
+)
+			: (StrykerqDA9kbh0b0FB3hF.MutantControl.IsActive(20)?"":"Nothing inspected")));
+	}
+})
+[10:31:16 INF] Safe Mode! Stryker will remove all mutations in OnInitialized and mark them as 'compile error'.
+[10:31:16 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case1.Blazor\Blazor.Components\Components\GreetingComponent.razor.cs resulted in a compile error (at 11:25) with id: CS0115, message: 'GreetingComponent.OnParametersSet()': no suitable method found to override (Source code: protected override void OnParametersSet()
+{	greeting = string.IsNullOrWhiteSpace(Name)
+			? "Hello, stranger"
+			: $"Hello, {Name}";
+})
+[10:31:16 INF] Safe Mode! Stryker will remove all mutations in OnParametersSet and mark them as 'compile error'.
+[10:31:16 FTL] Stryker.NET could not compile the project after mutation. This is probably an error for Stryker.NET and not your project. Please report this issue on github with the previous error message.
+[10:31:16 ERR] An error occurred during the mutation test run 
+System.AggregateException: One or more errors occurred. (Internal error due to compile error.)
+ ---> Stryker.Abstractions.Exceptions.CompilationException: Internal error due to compile error.
+   at Stryker.Core.Compiling.CSharpRollbackProcess.RollbackMutationsInError(ICompilationContent wrapper, ImmutableArray`1 diagnostics, Mode mode, Boolean devMode) in /_/src/Stryker.Core/Stryker.Core/Compiling/CSharpRollbackProcess.cs:line 82
+   at Stryker.Core.Compiling.CsharpCompilingProcess.TryCompilation(Stream ms, Stream symbolStream, EmitResult previousEmitResult, Mode mode, Int32 retryCount) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 184
+   at Stryker.Core.Compiling.CsharpCompilingProcess.Compile(Stream ilStream, Stream symbolStream) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 95
+   at Stryker.Core.MutationTest.CsharpMutationProcess.CompileMutations(MutationTestInput input, CsharpCompilingProcess compilingProcess) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 72
+   at Stryker.Core.MutationTest.CsharpMutationProcess.Mutate(MutationTestInput input, IStrykerOptions options) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 62
+   at Stryker.Core.MutationTest.MutationTestProcess.Mutate() in /_/src/Stryker.Core/Stryker.Core/MutationTest/MutationTestProcess.cs:line 65
+   at Stryker.Core.Initialisation.ProjectMutator.MutateProject(IStrykerOptions options, MutationTestInput input, IReporter reporters, IMutationTestProcess mutationTestProcess) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectMutator.cs:line 39
+   at Stryker.Core.Initialisation.ProjectOrchestrator.<>c__DisplayClass8_0.<MutateProjectsAsync>b__0(MutationTestInput mutationTestInput) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 76
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at Stryker.Core.Initialisation.ProjectOrchestrator.MutateProjectsAsync(IStrykerOptions options, IReporter reporters, ITestRunner runner) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 74
+   at Stryker.Core.StrykerRunner.RunMutationTestAsync(IStrykerInputs inputs) in /_/src/Stryker.Core/Stryker.Core/StrykerRunner.cs:line 61
+[10:31:16 INF] Time Elapsed 00:00:05.9124336
+Unhandled exception. System.AggregateException: One or more errors occurred. (Internal error due to compile error.)
+ ---> Stryker.Abstractions.Exceptions.CompilationException: Internal error due to compile error.
+   at Stryker.Core.Compiling.CSharpRollbackProcess.RollbackMutationsInError(ICompilationContent wrapper, ImmutableArray`1 diagnostics, Mode mode, Boolean devMode) in /_/src/Stryker.Core/Stryker.Core/Compiling/CSharpRollbackProcess.cs:line 82
+   at Stryker.Core.Compiling.CsharpCompilingProcess.TryCompilation(Stream ms, Stream symbolStream, EmitResult previousEmitResult, Mode mode, Int32 retryCount) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 184
+   at Stryker.Core.Compiling.CsharpCompilingProcess.Compile(Stream ilStream, Stream symbolStream) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 95
+   at Stryker.Core.MutationTest.CsharpMutationProcess.CompileMutations(MutationTestInput input, CsharpCompilingProcess compilingProcess) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 72
+   at Stryker.Core.MutationTest.CsharpMutationProcess.Mutate(MutationTestInput input, IStrykerOptions options) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 62
+   at Stryker.Core.MutationTest.MutationTestProcess.Mutate() in /_/src/Stryker.Core/Stryker.Core/MutationTest/MutationTestProcess.cs:line 65
+   at Stryker.Core.Initialisation.ProjectMutator.MutateProject(IStrykerOptions options, MutationTestInput input, IReporter reporters, IMutationTestProcess mutationTestProcess) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectMutator.cs:line 39
+   at Stryker.Core.Initialisation.ProjectOrchestrator.<>c__DisplayClass8_0.<MutateProjectsAsync>b__0(MutationTestInput mutationTestInput) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 76
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at Stryker.Core.Initialisation.ProjectOrchestrator.MutateProjectsAsync(IStrykerOptions options, IReporter reporters, ITestRunner runner) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 74
+   at Stryker.Core.StrykerRunner.RunMutationTestAsync(IStrykerInputs inputs) in /_/src/Stryker.Core/Stryker.Core/StrykerRunner.cs:line 61
+   at Stryker.CLI.StrykerCli.RunStrykerAsync(IStrykerInputs inputs) in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 157
+   at Stryker.CLI.StrykerCli.<>c__DisplayClass11_0.<<RunAsync>b__0>d.MoveNext() in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 129
+--- End of stack trace from previous location ---
+   at McMaster.Extensions.CommandLineUtils.CommandLineApplication.ExecuteAsync(String[] args, CancellationToken cancellationToken)
+   at Stryker.CLI.StrykerCli.RunAsync(String[] args) in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 135
+   at Stryker.CLI.Program.Main(String[] args) in /_/src/Stryker.CLI/Stryker.CLI/Program.cs:line 28
+   at Stryker.CLI.Program.<Main>(String[] args)

@@ -1,0 +1,10 @@
+<Project>
+	<!-- Mirrors the real solution: every project references Nerdbank.GitVersioning.
+	     It matters to this repro. Without it the temporary _wpftmp project that WPF's
+	     two-pass markup compile builds fails its design-time build with
+	     NETSDK1022 (duplicate Compile items), and Stryker reports "analysis failed"
+	     instead of reaching the compile errors below. Same duplication, earlier symptom. -->
+	<ItemGroup>
+		<PackageReference Include="Nerdbank.GitVersioning" Version="3.10.85" PrivateAssets="all" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+bin/
+obj/
+StrykerOutput/
+*.log
+!logs/*.log
+*.zip
+issue-comment.md

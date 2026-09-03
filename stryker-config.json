@@ -1,0 +1,9 @@
+{
+	"stryker-config": {
+		"reporters": [
+			"Progress",
+			"Html"
+		],
+		"test-runner": "mtp"
+	}
+}

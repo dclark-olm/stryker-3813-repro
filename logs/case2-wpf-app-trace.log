@@ -1,0 +1,276 @@
+
+   _____ _              _               _   _ ______ _______  
+  / ____| |            | |             | \ | |  ____|__   __| 
+ | (___ | |_ _ __ _   _| | _____ _ __  |  \| | |__     | |    
+  \___ \| __| '__| | | | |/ / _ \ '__| | . ` |  __|    | |    
+  ____) | |_| |  | |_| |   <  __/ |    | |\  | |____   | |    
+ |_____/ \__|_|   \__, |_|\_\___|_| (_)|_| \_|______|  |_|    
+                   __/ |                                      
+                  |___/                                       
+
+
+[10:45:30 INF] Logging enabled at level Trace
+Version: 4.16.0
+[10:45:30 DBG] Stryker starting, version: 4.16.0
+
+[10:45:30 VRB]   CACHE https://api.nuget.org/v3/registration5-gz-semver2/dotnet-stryker/index.json
+[10:45:30 VRB]   CACHE https://api.nuget.org/v3/registration5-gz-semver2/dotnet-stryker/index.json
+[10:45:30 DBG] Stryker started with options: {"MsBuildPath": null, "DiagMode": false, "ProjectPath": "C:\\src\\Repos\\stryker-3813-repro\\Case2.WpfApp\\Wpf.App.Tests", "IsSolutionContext": false, "WorkingDirectory": "C:\\src\\Repos\\stryker-3813-repro\\Case2.WpfApp\\Wpf.App.Tests", "OutputPath": "C:\\src\\Repos\\stryker-3813-repro\\Case2.WpfApp\\Wpf.App.Tests\\StrykerOutput\\2026-09-03.10-45-30", "ReportPath": "C:\\src\\Repos\\stryker-3813-repro\\Case2.WpfApp\\Wpf.App.Tests\\StrykerOutput\\2026-09-03.10-45-30\\reports", "ReportFileName": "mutation-report", "SolutionPath": null, "Configuration": null, "Platform": null, "TargetFramework": null, "LogOptions": {"LogToFile": false, "LogLevel": "Verbose", "$type": "LogOptions"}, "MutationLevel": "Standard", "Thresholds": {"High": 80, "Low": 60, "Break": 0, "$type": "Thresholds"}, "AdditionalTimeout": 5000, "LanguageVersion": "Default", "Concurrency": 16, "SourceProjectName": "", "TestProjects": [], "TestCaseFilter": "", "Reporters": ["Progress", "Html"], "WithBaseline": false, "BaselineProvider": "Disk", "AzureFileStorageUrl": "", "AzureFileStorageSas": "", "S3BucketName": "", "S3Endpoint": "", "S3Region": "", "DashboardUrl": "https://dashboard.stryker-mutator.io", "DashboardApiKey": null, "Since": false, "SinceTarget": "master", "DiffIgnoreChanges": [], "FallbackVersion": "master", "ModuleName": "", "ReportTypeToOpen": null, "Mutate": [{"Glob": {"Tokens": [{"TrailingPathSeparator": {"Value": "\\", "$type": "PathSeparatorToken"}, "LeadingPathSeparator": null, "$type": "WildcardDirectoryToken"}, {"$type": "WildcardToken"}], "$type": "Glob"}, "IsExclude": false, "TextSpans": [{"Start": 0, "End": 2147483647, "Length": 2147483647, "IsEmpty": false, "$type": "TextSpan"}], "$type": "FilePattern"}], "IgnoredMethods": [], "ExcludedMutations": [], "ExcludedLinqExpressions": [], "OptimizationMode": "CoverageBasedTest", "ProjectName": "", "ProjectVersion": "", "BreakOnInitialTestFailure": false, "TestRunner": "MicrosoftTestPlatform", "MutantIdProvider": {"$type": "BasicIdProvider"}, "$type": "StrykerOptions"}
+[10:45:30 INF] Analysis starting.
+[10:45:30 VRB] Scanned the directory C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests for *.csproj files: found ["C:\\src\\Repos\\stryker-3813-repro\\Case2.WpfApp\\Wpf.App.Tests\\Wpf.App.Tests.csproj"]
+[10:45:30 VRB] Found project file C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\Wpf.App.Tests.csproj in path C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests
+[10:45:30 DBG] Using C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\Wpf.App.Tests.csproj as test project
+[10:45:30 INF] Analyzing 1 test project(s).
+[10:45:30 DBG] Analyzing Wpf.App.Tests.csproj
+[10:45:31 DBG] Analysis of project Wpf.App.Tests.csproj succeeded.
+[10:45:31 DBG] Analyzing ..\Wpf.App\Wpf.App.csproj
+[10:45:32 DBG] Analysis of project ..\Wpf.App\Wpf.App.csproj succeeded.
+[10:45:32 DBG] Analyzing 1 projects.
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\Wpf.App.Version.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+[10:45:33 DBG] Skipping auto-generated code file: C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\Wpf.App_3jycynnk_wpftmp.AssemblyInfo.cs
+[10:45:33 INF] Found project C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\Wpf.App.csproj to mutate.
+[10:45:33 INF] Analysis complete.
+[10:45:33 INF] Building test project C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\Wpf.App.Tests.csproj (1/1)
+[10:45:33 DBG] Started initial build using dotnet build
+[10:45:33 INF] Building project Wpf.App.Tests.csproj using dotnet build Wpf.App.Tests.csproj -c Debug --property:Platform=AnyCPU (directory C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests.)
+[10:45:34 VRB] Initial build output   Determining projects to restore...
+  All projects are up-to-date for restore.
+  Wpf.App -> C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\bin\Debug\net10.0-windows\Wpf.App.dll
+  Wpf.App.Tests -> C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\bin\Debug\net10.0-windows\Wpf.App.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.31
+
+[10:45:34 DBG] Initial build successful
+[10:45:34 WRN] The Microsoft Test Platform testrunner is currently in preview. Results should be verified since this feature is still being tested.
+[10:45:34 DBG] MtpRunner-0: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-0.txt
+[10:45:34 DBG] MtpRunner-8: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-8.txt
+[10:45:34 DBG] MtpRunner-13: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-13.txt
+[10:45:34 DBG] MtpRunner-10: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-10.txt
+[10:45:34 DBG] MtpRunner-11: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-11.txt
+[10:45:34 DBG] MtpRunner-2: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-2.txt
+[10:45:34 DBG] MtpRunner-1: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-1.txt
+[10:45:34 DBG] MtpRunner-9: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-9.txt
+[10:45:34 DBG] MtpRunner-14: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-14.txt
+[10:45:34 DBG] MtpRunner-7: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-7.txt
+[10:45:34 DBG] MtpRunner-4: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-4.txt
+[10:45:34 DBG] MtpRunner-12: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-12.txt
+[10:45:34 DBG] MtpRunner-3: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-3.txt
+[10:45:34 DBG] MtpRunner-6: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-6.txt
+[10:45:34 DBG] MtpRunner-15: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-15.txt
+[10:45:34 DBG] MtpRunner-5: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-5.txt
+[10:45:34 DBG] MtpRunner-0: Test server started successfully for C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\bin\Debug\net10.0-windows\Wpf.App.Tests.dll
+[10:45:35 DBG] MtpRunner-0: Discovered 2 tests in C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\bin\Debug\net10.0-windows\Wpf.App.Tests.dll
+[10:45:35 INF] Number of tests found: 2 for project C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\Wpf.App.csproj. Initial test run started.
+[10:45:35 DBG] MtpRunner-5: Wrote mutant ID -1 to memory-mapped file C:\Users\dclark\AppData\Local\Temp\stryker-mutant-5.txt
+[10:45:35 DBG] MtpRunner-5: Test server started successfully for C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App.Tests\bin\Debug\net10.0-windows\Wpf.App.Tests.dll
+[10:45:35 DBG] Resetting all test server processes in the pool
+[10:45:35 DBG] MtpRunner-5: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-5: Test servers reset complete
+[10:45:35 DBG] MtpRunner-0: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-0: Test servers reset complete
+[10:45:35 DBG] MtpRunner-15: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-15: Test servers reset complete
+[10:45:35 DBG] MtpRunner-6: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-6: Test servers reset complete
+[10:45:35 DBG] MtpRunner-3: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-3: Test servers reset complete
+[10:45:35 DBG] MtpRunner-12: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-12: Test servers reset complete
+[10:45:35 DBG] MtpRunner-4: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-4: Test servers reset complete
+[10:45:35 DBG] MtpRunner-7: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-7: Test servers reset complete
+[10:45:35 DBG] MtpRunner-14: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-14: Test servers reset complete
+[10:45:35 DBG] MtpRunner-9: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-9: Test servers reset complete
+[10:45:35 DBG] MtpRunner-1: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-1: Test servers reset complete
+[10:45:35 DBG] MtpRunner-2: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-2: Test servers reset complete
+[10:45:35 DBG] MtpRunner-11: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-11: Test servers reset complete
+[10:45:35 DBG] MtpRunner-10: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-10: Test servers reset complete
+[10:45:35 DBG] MtpRunner-13: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-13: Test servers reset complete
+[10:45:35 DBG] MtpRunner-8: Resetting test servers to reload assemblies
+[10:45:35 DBG] MtpRunner-8: Test servers reset complete
+[10:45:35 DBG] All test server processes have been reset
+[10:45:35 DBG] Initial test run output: .
+[10:45:35 DBG] Mutating C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\App.xaml.cs
+[10:45:35 DBG] Mutating C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\MainWindow.xaml.cs
+[10:45:35 DBG] Mutating C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\Totals.cs
+[10:45:35 DBG] Mutant 0 created {
+		this.passed = passed;
+		this.rejected = rejected;
+	} -> {} using Stryker.Core.Mutators.BlockMutator
+[10:45:35 DBG] Mutant 1 created {
+		if (passed + rejected == 0)
+			return "Nothing inspected";
+
+		return $"{passed} passed, {rejected} rejected";
+	} -> {} using Stryker.Core.Mutators.BlockMutator
+[10:45:35 DBG] Mutant 2 created passed + rejected == 0 -> passed + rejected != 0 using Stryker.Core.Mutators.BinaryExpressionMutator
+[10:45:35 DBG] Mutant 3 created passed + rejected -> passed - rejected using Stryker.Core.Mutators.BinaryExpressionMutator
+[10:45:35 DBG] Mutant 4 created "Nothing inspected" -> "" using Stryker.Core.Mutators.StringMutator
+[10:45:35 DBG] Mutant 5 created $"{passed} passed, {rejected} rejected" -> $"" using Stryker.Core.Mutators.InterpolatedStringMutator
+[10:45:35 DBG] Mutating C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\TotalsView.xaml.cs
+[10:45:35 DBG] Mutant 6 created {
+		InitializeComponent();
+		Description.Text = new Totals(3, 1).Describe();
+	} -> {} using Stryker.Core.Mutators.BlockMutator
+[10:45:35 DBG] Mutant 7 created InitializeComponent(); -> ; using Stryker.Core.Mutators.StatementMutator
+[10:45:35 DBG] 8 mutants created
+[10:45:35 DBG] Trying compilation for the first time.
+[10:45:36 DBG] Compilation failed
+[10:45:36 DBG] The namespace 'XamlGeneratedNamespace' already contains a definition for 'GeneratedInternalTypeHelper', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[769..796))
+[10:45:36 DBG] Duplicate 'System.Diagnostics.DebuggerNonUserCodeAttribute' attribute, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[496..543))
+[10:45:36 DBG] Duplicate 'System.CodeDom.Compiler.GeneratedCodeAttribute' attribute, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[553..599))
+[10:45:36 DBG] Duplicate 'System.ComponentModel.EditorBrowsableAttribute' attribute, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[646..692))
+[10:45:36 DBG] Type 'App' already defines a member called 'InitializeComponent' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs[1583..1602))
+[10:45:36 DBG] Type 'App' already defines a member called 'Main' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs[2151..2155))
+[10:45:36 DBG] Type 'GeneratedInternalTypeHelper' already defines a member called 'CreateInstance' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[962..976))
+[10:45:36 DBG] Type 'GeneratedInternalTypeHelper' already defines a member called 'GetPropertyValue' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[1460..1476))
+[10:45:36 DBG] Type 'GeneratedInternalTypeHelper' already defines a member called 'SetPropertyValue' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[1824..1840))
+[10:45:36 DBG] Type 'GeneratedInternalTypeHelper' already defines a member called 'CreateDelegate' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[2211..2225))
+[10:45:36 DBG] Type 'GeneratedInternalTypeHelper' already defines a member called 'AddEventHandler' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs[2779..2794))
+[10:45:36 DBG] 'IComponentConnector.Connect(int, object)' is explicitly implemented more than once., SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1309..1319))
+[10:45:36 DBG] 'IComponentConnector.Connect(int, object)' is explicitly implemented more than once., SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[1293..1303))
+[10:45:36 DBG] The type 'MainWindow' already contains a definition for '_contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1421..1435))
+[10:45:36 DBG] Type 'MainWindow' already defines a member called 'InitializeComponent' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1706..1725))
+[10:45:36 DBG] Type 'MainWindow' already defines a member called 'System.Windows.Markup.IComponentConnector.Connect' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[2922..2929))
+[10:45:36 DBG] The type 'TotalsView' already contains a definition for 'Description', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[1631..1642))
+[10:45:36 DBG] The type 'TotalsView' already contains a definition for '_contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[1731..1745))
+[10:45:36 DBG] Type 'TotalsView' already defines a member called 'InitializeComponent' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[2016..2035))
+[10:45:36 DBG] Type 'TotalsView' already defines a member called 'System.Windows.Markup.IComponentConnector.Connect' with the same parameter types, SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[3232..3239))
+[10:45:36 DBG] Program has more than one entry point defined. Compile with /main to specify the type that contains the entry point., SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs[2151..2155))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1747..1761))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1818..1832))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[2057..2071))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[2128..2142))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[2983..2997))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1747..1761))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[1818..1832))
+[10:45:36 DBG] Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs[2983..2997))
+[10:45:36 DBG] The call is ambiguous between the following methods or properties: 'Wpf.App.MainWindow.InitializeComponent()' and 'Wpf.App.MainWindow.InitializeComponent()', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\MainWindow.xaml.cs[85..104))
+[10:45:36 DBG] The call is ambiguous between the following methods or properties: 'Wpf.App.App.InitializeComponent()' and 'Wpf.App.App.InitializeComponent()', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs[2227..2246))
+[10:45:36 DBG] The call is ambiguous between the following methods or properties: 'Wpf.App.App.InitializeComponent()' and 'Wpf.App.App.InitializeComponent()', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\App.g.cs[2227..2246))
+[10:45:36 DBG] Ambiguity between 'TotalsView.Description' and 'TotalsView.Description', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[3364..3375))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[3479..3493))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[2057..2071))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[2128..2142))
+[10:45:36 DBG] Ambiguity between 'TotalsView.Description' and 'TotalsView.Description', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[3364..3375))
+[10:45:36 DBG] Ambiguity between 'TotalsView._contentLoaded' and 'TotalsView._contentLoaded', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\TotalsView.g.cs[3479..3493))
+[10:45:36 DBG] The call is ambiguous between the following methods or properties: 'Wpf.App.TotalsView.InitializeComponent()' and 'Wpf.App.TotalsView.InitializeComponent()', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\TotalsView.xaml.cs[208..227))
+[10:45:36 DBG] Ambiguity between 'TotalsView.Description' and 'TotalsView.Description', SourceFile(C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\TotalsView.xaml.cs[234..245))
+[10:45:36 DBG] Trying compilation for the second time.
+[10:45:36 DBG] RollBacking mutations from C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs.
+[10:45:36 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs resulted in a compile error (at 40:25) with id: CS8646, message: 'IComponentConnector.Connect(int, object)' is explicitly implemented more than once. (Source code: public partial class MainWindow : System.Windows.Window, System.Windows.Markup.IComponentConnector {
+        
+        private bool _contentLoaded;
+        
+        /// <summary>
+        /// InitializeComponent
+        /// </summary>
+        [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.11.0")]
+        public void InitializeComponent() {
+            if (_contentLoaded) {
+                return;
+            }
+            _contentLoaded = true;
+            System.Uri resourceLocater = new System.Uri("/Wpf.App;V1.0.0.0;component/mainwindow.xaml", System.UriKind.Relative);
+            
+            #line 1 "..\..\..\MainWindow.xaml"
+            System.Windows.Application.LoadComponent(this, resourceLocater);
+            
+            #line default
+            #line hidden
+        }
+        
+        [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "10.0.11.0")]
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Never)]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Design", "CA1033:InterfaceMethodsShouldBeCallableByChildTypes")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Maintainability", "CA1502:AvoidExcessiveComplexity")]
+        [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1800:DoNotCastUnnecessarily")]
+        void System.Windows.Markup.IComponentConnector.Connect(int connectionId, object target) {
+            this._contentLoaded = true;
+        }
+    })
+[10:45:36 INF] Safe Mode! Stryker will remove all mutations in whole file and mark them as 'compile error'.
+[10:45:36 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs resulted in a compile error (at 50:16) with id: CS0229, message: Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded' (Source code: _contentLoaded)
+[10:45:36 INF] Safe Mode! Stryker will remove all mutations in InitializeComponent and mark them as 'compile error'.
+[10:45:36 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs resulted in a compile error (at 53:12) with id: CS0229, message: Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded' (Source code: _contentLoaded)
+[10:45:36 INF] Safe Mode! Stryker will remove all mutations in InitializeComponent and mark them as 'compile error'.
+[10:45:36 WRN] An unidentified mutation in C:\src\Repos\stryker-3813-repro\Case2.WpfApp\Wpf.App\obj\Debug\net10.0-windows\MainWindow.g.cs resulted in a compile error (at 70:17) with id: CS0229, message: Ambiguity between 'MainWindow._contentLoaded' and 'MainWindow._contentLoaded' (Source code: _contentLoaded)
+[10:45:36 INF] Safe Mode! Stryker will remove all mutations in Connect and mark them as 'compile error'.
+[10:45:36 FTL] Stryker.NET could not compile the project after mutation. This is probably an error for Stryker.NET and not your project. Please report this issue on github with the previous error message.
+[10:45:36 ERR] An error occurred during the mutation test run 
+System.AggregateException: One or more errors occurred. (Internal error due to compile error.)
+ ---> Stryker.Abstractions.Exceptions.CompilationException: Internal error due to compile error.
+   at Stryker.Core.Compiling.CSharpRollbackProcess.RollbackMutationsInError(ICompilationContent wrapper, ImmutableArray`1 diagnostics, Mode mode, Boolean devMode) in /_/src/Stryker.Core/Stryker.Core/Compiling/CSharpRollbackProcess.cs:line 82
+   at Stryker.Core.Compiling.CsharpCompilingProcess.TryCompilation(Stream ms, Stream symbolStream, EmitResult previousEmitResult, Mode mode, Int32 retryCount) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 184
+   at Stryker.Core.Compiling.CsharpCompilingProcess.Compile(Stream ilStream, Stream symbolStream) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 95
+   at Stryker.Core.MutationTest.CsharpMutationProcess.CompileMutations(MutationTestInput input, CsharpCompilingProcess compilingProcess) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 72
+   at Stryker.Core.MutationTest.CsharpMutationProcess.Mutate(MutationTestInput input, IStrykerOptions options) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 62
+   at Stryker.Core.MutationTest.MutationTestProcess.Mutate() in /_/src/Stryker.Core/Stryker.Core/MutationTest/MutationTestProcess.cs:line 65
+   at Stryker.Core.Initialisation.ProjectMutator.MutateProject(IStrykerOptions options, MutationTestInput input, IReporter reporters, IMutationTestProcess mutationTestProcess) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectMutator.cs:line 39
+   at Stryker.Core.Initialisation.ProjectOrchestrator.<>c__DisplayClass8_0.<MutateProjectsAsync>b__0(MutationTestInput mutationTestInput) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 76
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at Stryker.Core.Initialisation.ProjectOrchestrator.MutateProjectsAsync(IStrykerOptions options, IReporter reporters, ITestRunner runner) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 74
+   at Stryker.Core.StrykerRunner.RunMutationTestAsync(IStrykerInputs inputs) in /_/src/Stryker.Core/Stryker.Core/StrykerRunner.cs:line 61
+[10:45:36 INF] Time Elapsed 00:00:05.8543834
+Unhandled exception. System.AggregateException: One or more errors occurred. (Internal error due to compile error.)
+ ---> Stryker.Abstractions.Exceptions.CompilationException: Internal error due to compile error.
+   at Stryker.Core.Compiling.CSharpRollbackProcess.RollbackMutationsInError(ICompilationContent wrapper, ImmutableArray`1 diagnostics, Mode mode, Boolean devMode) in /_/src/Stryker.Core/Stryker.Core/Compiling/CSharpRollbackProcess.cs:line 82
+   at Stryker.Core.Compiling.CsharpCompilingProcess.TryCompilation(Stream ms, Stream symbolStream, EmitResult previousEmitResult, Mode mode, Int32 retryCount) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 184
+   at Stryker.Core.Compiling.CsharpCompilingProcess.Compile(Stream ilStream, Stream symbolStream) in /_/src/Stryker.Core/Stryker.Core/Compiling/CsharpCompilingProcess.cs:line 95
+   at Stryker.Core.MutationTest.CsharpMutationProcess.CompileMutations(MutationTestInput input, CsharpCompilingProcess compilingProcess) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 72
+   at Stryker.Core.MutationTest.CsharpMutationProcess.Mutate(MutationTestInput input, IStrykerOptions options) in /_/src/Stryker.Core/Stryker.Core/MutationTest/CsharpMutationProcess.cs:line 62
+   at Stryker.Core.MutationTest.MutationTestProcess.Mutate() in /_/src/Stryker.Core/Stryker.Core/MutationTest/MutationTestProcess.cs:line 65
+   at Stryker.Core.Initialisation.ProjectMutator.MutateProject(IStrykerOptions options, MutationTestInput input, IReporter reporters, IMutationTestProcess mutationTestProcess) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectMutator.cs:line 39
+   at Stryker.Core.Initialisation.ProjectOrchestrator.<>c__DisplayClass8_0.<MutateProjectsAsync>b__0(MutationTestInput mutationTestInput) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 76
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`2.<ForWorker>b__1(RangeWorker& currentWorker, Int64 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal,TInt](TInt fromInclusive, TInt toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at Stryker.Core.Initialisation.ProjectOrchestrator.MutateProjectsAsync(IStrykerOptions options, IReporter reporters, ITestRunner runner) in /_/src/Stryker.Core/Stryker.Core/Initialisation/ProjectOrchestrator.cs:line 74
+   at Stryker.Core.StrykerRunner.RunMutationTestAsync(IStrykerInputs inputs) in /_/src/Stryker.Core/Stryker.Core/StrykerRunner.cs:line 61
+   at Stryker.CLI.StrykerCli.RunStrykerAsync(IStrykerInputs inputs) in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 157
+   at Stryker.CLI.StrykerCli.<>c__DisplayClass11_0.<<RunAsync>b__0>d.MoveNext() in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 129
+--- End of stack trace from previous location ---
+   at McMaster.Extensions.CommandLineUtils.CommandLineApplication.ExecuteAsync(String[] args, CancellationToken cancellationToken)
+   at Stryker.CLI.StrykerCli.RunAsync(String[] args) in /_/src/Stryker.CLI/Stryker.CLI/StrykerCLI.cs:line 135
+   at Stryker.CLI.Program.Main(String[] args) in /_/src/Stryker.CLI/Stryker.CLI/Program.cs:line 28
+   at Stryker.CLI.Program.<Main>(String[] args)

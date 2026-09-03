@@ -1,0 +1,12 @@
+<UserControl
+	x:Class="Wpf.Library.Views.Alarm"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:library="clr-namespace:Wpf.Library">
+	<!-- The converter is declared in this same project, which is what makes WPF run its
+	     two-pass markup compile and build the temporary _wpftmp assembly. -->
+	<UserControl.Resources>
+		<library:SeverityToTextConverter x:Key="SeverityToText" />
+	</UserControl.Resources>
+	<TextBlock x:Name="Message" />
+</UserControl>
