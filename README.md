@@ -71,6 +71,42 @@ CS0115:
 
 The Razor source generator is refused, does not run, and the generated half never exists.
 
+### A workaround for case 1 that works
+
+Point the project at the Razor SDK from a slightly older .NET SDK feature band, so the generator
+Stryker loads is one built against a Roslyn it carries:
+
+```xml
+<RazorSdkDirectoryRoot>C:\Program Files\dotnet\sdk\10.0.303\Sdks\Microsoft.NET.Sdk.Razor\</RazorSdkDirectoryRoot>
+```
+
+`RazorSdkDirectoryRoot` is the property the Razor SDK itself uses to locate its tools and source
+generators, and `Sdk.Razor.CurrentVersion.targets` documents it as overridable. Setting it as an
+environment variable works too, which keeps the product build untouched and applies only to the
+Stryker run.
+
+The versions behind it, read from the assembly references:
+
+| Component | Roslyn it carries or needs |
+|---|---|
+| `dotnet-stryker` 4.16.0 | carries Microsoft.CodeAnalysis **5.6** |
+| Razor generator in SDK 10.0.400 | needs **5.9** — refused |
+| Razor generator in SDK 10.0.303 | needs **5.5** — loads |
+
+With that one property, case 1 stops failing and produces a real score: 21 mutants, 13 killed,
+6 survived, **68.42%**, exit code 0, and no `ReferencesNewerCompiler` warning. On the real
+26-component Blazor library this repro was reduced from, the same property gave 401 mutants and
+41.39%.
+
+Two notes on it. The path is absolute, so it only holds where that SDK band is installed — a CI
+agent that installs one SDK from `global.json` may not have it. And
+`<UseRazorSourceGenerator>false</UseRazorSourceGenerator>`, which switches to the older two-step
+Razor pipeline, is **not** a workaround: it does silence the analyzer warning, but the `.razor.g.cs`
+files it writes under `obj\...\Razor\` never appear in Stryker's source list, so `CS0115` comes back
+unchanged.
+
+The case as committed here does **not** carry the workaround, so it still reproduces the failure.
+
 ## Case 2 - WPF application, generated half present twice (CS8646, CS0229)
 
 `Case2.WpfApp`. A `WinExe` with `UseWPF`, an `App.xaml`, a `MainWindow.xaml` and a `TotalsView` user

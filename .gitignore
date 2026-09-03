@@ -5,3 +5,4 @@ StrykerOutput/
 !logs/*.log
 *.zip
 issue-comment.md
+.idea/
